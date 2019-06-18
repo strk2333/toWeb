@@ -1,0 +1,16 @@
+function format() {
+  let divs = document.getElementsByTagName('div')
+  for (let i = 0; i < divs.length; i++) {
+    if (divs[i].hasChildNodes() && divs[i].firstChild.nodeName === 'FONT') {
+      divs[i].firstChild.replaceWith(divs[i].firstChild.textContent);
+    }
+    if (!divs[i].innerHTML.startsWith('#')) {
+      divs[i].innerHTML = divs[i].innerHTML.replace(/ /g, '<div class="space"></div>')
+    }
+    divs[i].innerHTML = divs[i].innerHTML.replace(/\./g, '<div class="dot"></div>')
+  }
+}
+
+window.onload = function () {
+  format()
+}

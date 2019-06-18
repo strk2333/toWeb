@@ -1,0 +1,22 @@
+{
+  "name": "toweb",
+  "version": "1.0.0",
+  "description": "to web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/strk2333/toWeb.git"
+  },
+  "keywords": [
+    "toweb"
+  ],
+  "author": "honoo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strk2333/toWeb/issues"
+  },
+  "homepage": "https://github.com/strk2333/toWeb#readme"
+}
